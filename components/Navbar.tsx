@@ -12,7 +12,7 @@ import { DATA } from '@/data/Data';
 
 const Navbar = () => {
   return (
-    <div className="fixed bottom-0 left-0 right-0 mb-4 z-30">
+    <div className="fixed bottom-0 left-0 right-0 mb-2 z-30">
       <TooltipProvider delayDuration={100}>
         <Dock direction="middle" className="rounded-full" iconDistance={160}>
           <DockIcon>
@@ -25,7 +25,7 @@ const Navbar = () => {
               </TooltipContent>
             </Tooltip>
           </DockIcon>
-          <Separator orientation="vertical" />
+          <Separator orientation="vertical" className="bg-gray-600" />
           {DATA.navbar.map((item, index) => (
             <DockIcon key={index}>
               <Tooltip>
@@ -38,7 +38,7 @@ const Navbar = () => {
               </Tooltip>
             </DockIcon>
           ))}
-          <Separator orientation="vertical" />
+          <Separator orientation="vertical" className="bg-gray-600" />
           <DockIcon>
             <MoonIcon className="size-6" />
           </DockIcon>
