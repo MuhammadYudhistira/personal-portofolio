@@ -63,7 +63,7 @@ const Experience = () => {
           <TabsContent value="Education" className="w-full mt-3 rounded-md p-4">
             <div className="flex items-center gap-4">
               <Image
-                src={'/img/logo_Unand.png'}
+                src={'/img/UNAND.png'}
                 alt="Logo Unand"
                 width={150}
                 height={150}
