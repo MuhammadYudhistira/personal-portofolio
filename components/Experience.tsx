@@ -20,41 +20,51 @@ const Experience = () => {
             value="Work"
             className="w-full mt-3 border broder-white/20 rounded-md p-4 space-y-8">
             <div className="flex gap-4">
-              <Image
-                src={'/img/LPPM.png'}
-                alt="Logo Unand"
-                width={150}
-                height={150}
-                className="object-contain rounded"
-                priority
-              />
+              <div className="relative size-20 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-36 lg:h-36">
+                <Image
+                  src="/img/LPPM.png"
+                  alt="Logo Unand"
+                  fill
+                  className="object-contain rounded"
+                  priority
+                />
+              </div>
               <div>
-                <p className="text-xs text-neutral-400">Mar 2024 - Aug 2024</p>
-                <p className="font-bold">LPPM Andalas University</p>
-                <p className="text-xs text-neutral-400">
+                <p className="text-[10px] sm:text-xs text-neutral-400">
+                  Mar 2024 - Aug 2024
+                </p>
+                <p className="font-bold text-sm sm:text-base">
+                  LPPM Andalas University
+                </p>
+                <p className="text-xs sm:text-sm text-neutral-400">
                   Web Developer - Freelance
                 </p>
-                <p className="font-semibold text-sm">
+                <p className="font-semibold text-xs sm:text-sm">
                   Web Design; Web Development; Wordpress + Elementor
                 </p>
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <Image
-                src={'/img/BPSDM.jpg'}
-                alt="Logo Unand"
-                width={150}
-                height={150}
-                className="object-contain rounded"
-                priority
-              />
+              <div className="relative size-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-36 lg:h-36">
+                <Image
+                  src="/img/BPSDM.jpg"
+                  alt="Logo Unand"
+                  fill
+                  className="object-cover rounded"
+                  priority
+                />
+              </div>
               <div>
-                <p className="text-xs text-neutral-400">Jan 2023 - Feb 2023</p>
-                <p className="font-bold">BPSDM Provinsi Sumatera Barat</p>
-                <p className="text-xs text-neutral-400">
+                <p className="text-[10px] sm:text-xs text-neutral-400">
+                  Jan 2023 - Feb 2023
+                </p>
+                <p className="text-sm sm:text-base font-bold">
+                  BPSDM Provinsi Sumatera Barat
+                </p>
+                <p className="text-xs sm:text-sm text-neutral-400">
                   Web Developer - Intern
                 </p>
-                <p className="font-semibold text-sm">
+                <p className="font-semibold text-xs sm:text-sm">
                   System Design; System Development;
                 </p>
               </div>
@@ -62,18 +72,23 @@ const Experience = () => {
           </TabsContent>
           <TabsContent value="Education" className="w-full mt-3 rounded-md p-4">
             <div className="flex items-center gap-4">
-              <Image
-                src={'/img/UNAND.png'}
-                alt="Logo Unand"
-                width={150}
-                height={150}
-                className="object-cover rounded"
-                priority
-              />
+              <div className="relative size-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-36 lg:h-36">
+                <Image
+                  src="/img/UNAND.png"
+                  alt="Logo Unand"
+                  fill
+                  className="object-cover rounded"
+                  priority
+                />
+              </div>
               <div>
-                <p className="text-sm text-neutral-400">Aug 2020 - May 2025</p>
-                <p className="font-bold">Andalas University</p>
-                <p className="text-sm text-neutral-400">
+                <p className="text-xs sm:text-sm text-neutral-400">
+                  Aug 2020 - May 2025
+                </p>
+                <p className="text-sm sm:text-base font-bold">
+                  Andalas University
+                </p>
+                <p className="text-xs sm:text-sm text-neutral-400">
                   Bachelor of Information Systems
                 </p>
               </div>

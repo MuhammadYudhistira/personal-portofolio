@@ -1,6 +1,7 @@
 import Experience from '@/components/Experience';
 import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
+import TechStack from '@/components/TechStack';
 
 const page = () => {
   return (
@@ -8,6 +9,7 @@ const page = () => {
       <Navbar />
       <Hero />
       <Experience />
+      <TechStack />
     </>
   );
 };

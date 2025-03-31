@@ -37,7 +37,7 @@ const Hero = () => {
           </span>
         </h3>
       </div>
-      <div className="absolute bottom-32 animate-bounce flex flex-col items-center justify-center gap-4 opacity-50">
+      <div className="absolute bottom-20 animate-bounce flex flex-col items-center justify-center gap-4 opacity-50">
         <p className="font-bold text-[#0ABAB5] ">SCROLL</p>
         <svg className="size-10 text-[#0ABAB5]">
           <Mouse width={36} height={36} />
