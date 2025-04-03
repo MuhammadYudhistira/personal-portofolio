@@ -9,6 +9,7 @@ import {
 } from '@/components/ui/tooltip';
 import { Separator } from '@/components/ui/separator';
 import { DATA } from '@/data/Data';
+import Link from 'next/link';
 
 const Navbar = () => {
   return (
@@ -18,7 +19,9 @@ const Navbar = () => {
           <DockIcon>
             <Tooltip>
               <TooltipTrigger>
-                <HomeIcon className="size-6" />
+                <Link href={'/'}>
+                  <HomeIcon className="size-6" />
+                </Link>
               </TooltipTrigger>
               <TooltipContent className="mb-2 bg-white text-black">
                 <p>Home</p>
@@ -30,7 +33,9 @@ const Navbar = () => {
             <DockIcon key={index}>
               <Tooltip>
                 <TooltipTrigger>
-                  <item.icon className="size-6" />
+                  <Link href={item.href} target="_blank">
+                    <item.icon className="size-6" />
+                  </Link>
                 </TooltipTrigger>
                 <TooltipContent className="mb-2 bg-white text-black">
                   <p>{item.label}</p>

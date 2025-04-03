@@ -10,8 +10,8 @@ const page = () => {
       <Navbar />
       <Hero />
       <Experience />
-      <TechStack />
       <Project />
+      <TechStack />
     </>
   );
 };

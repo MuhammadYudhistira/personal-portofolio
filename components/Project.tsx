@@ -8,11 +8,16 @@ import { Globe } from 'lucide-react';
 const Project = () => {
   return (
     <div className="py-24">
-      <h3 className="font-gilda text-4xl text-center mb-8">My Projects</h3>
-      <div className="grid grid-cols-1 gap-12">
-        <div className="bg-white/5 backdrop-blur-none rounded-xl w-full pb-2 flex flex-col start items-start">
-          <div className="relative w-full h-56 mb-4 overflow-hidden rounded-t-xl">
-            <Image src={'/project/diaryapp.png'} alt="project" fill />
+      <h3 className="font-gilda text-4xl text-center mb-12">My Projects</h3>
+      <div className="grid grid-cols-1 gap-16">
+        <div className="bg-white/5 backdrop-blur-none rounded-xl w-full pb-4 flex flex-col start items-start">
+          <div className="relative w-full aspect-[16/9] mb-4 overflow-hidden rounded-t-xl">
+            <Image
+              src={'/project/diaryapp.png'}
+              alt="project"
+              fill
+              className="object-cover"
+            />
           </div>
           <div className="flex flex-col gap-2 px-4">
             <h4 className="text-xl font-bold">Diary App</h4>
@@ -45,9 +50,14 @@ const Project = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white/5 backdrop-blur-none rounded-xl w-full pb-2 flex flex-col start items-start">
-          <div className="relative w-full h-56 mb-4 overflow-hidden rounded-t-xl">
-            <Image src={'/project/maset.png'} alt="project" fill />
+        <div className="bg-white/5 backdrop-blur-none rounded-xl w-full pb-4 flex flex-col start items-start">
+          <div className="relative w-full aspect-[16/9] mb-4 overflow-hidden rounded-t-xl">
+            <Image
+              src={'/project/maset.png'}
+              alt="project"
+              fill
+              className="object-cover"
+            />
           </div>
           <div className="flex flex-col gap-2 px-4">
             <h4 className="text-xl font-bold">

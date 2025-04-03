@@ -3,12 +3,26 @@ import {
   InstagramLogoIcon,
   LinkedInLogoIcon,
 } from '@radix-ui/react-icons';
+import { File } from 'lucide-react';
 
 export const DATA = {
   navbar: [
-    { href: '/#', icon: GitHubLogoIcon, label: 'Github' },
-    { href: '/#', icon: InstagramLogoIcon, label: 'Instagram' },
-    { href: '/#', icon: LinkedInLogoIcon, label: 'LinkedIn' },
+    {
+      href: 'https://github.com/MuhammadYudhistira',
+      icon: GitHubLogoIcon,
+      label: 'Github',
+    },
+    { href: '/Muhammad-Yudhistira-resume.pdf', icon: File, label: 'Resume' },
+    {
+      href: 'https://www.linkedin.com/in/myudhistira',
+      icon: LinkedInLogoIcon,
+      label: 'LinkedIn',
+    },
+    {
+      href: 'https://www.instagram.com/myudhistira07/',
+      icon: InstagramLogoIcon,
+      label: 'Instagram',
+    },
   ],
   techStack: [
     {

@@ -36,8 +36,13 @@ const Hero = () => {
             Indonesia
           </span>
         </h3>
+        {/* <ShimmerButton className="shadow-2xl mt-2">
+          <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+            <File />
+          </span>
+        </ShimmerButton> */}
       </div>
-      <div className="absolute bottom-20 animate-bounce flex flex-col items-center justify-center gap-4 opacity-50">
+      <div className="absolute hidden bottom-32 animate-bounce md:flex flex-col items-center justify-center gap-4 opacity-50">
         <p className="font-bold text-[#0ABAB5] ">SCROLL</p>
         <svg className="size-10 text-[#0ABAB5]">
           <Mouse width={36} height={36} />
