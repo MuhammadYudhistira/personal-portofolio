@@ -4,7 +4,7 @@ import { Particles } from './magicui/particles';
 
 const Hero = () => {
   return (
-    <div className="w-full h-screen bg-[#09090B] antialiased bg-grid-white/[0.02] flex flex-col items-center justify-center overflow-hidden">
+    <div className="w-full h-screen bg-[#09090B] antialiased bg-grid-white/[0.02] flex flex-col items-center justify-center overflow-hidden py-24">
       {/* <GridPattern
         width={1}
         height={1}
@@ -14,8 +14,8 @@ const Hero = () => {
       /> */}
       <Particles
         className="absolute inset-0 z-0"
-        quantity={150}
-        ease={80}
+        quantity={50}
+        ease={50}
         color={'#0ABAB5'}
         staticity={50}
         size={1}
@@ -24,7 +24,7 @@ const Hero = () => {
       <div className="z-10 flex flex-col items-center text-center">
         <div>
           <h1 className="font-gilda text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
-            Hello, <br /> I&apos;m Muhammad Yudhistira
+            I&apos;m Muhammad Yudhistira
           </h1>
         </div>
         <h3 className="font-gilda text-xl md:text-5xl mt-4 font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#0ABAB5] via-[#4EF5F1] to-[#c2fffd]">

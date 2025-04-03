@@ -4,7 +4,7 @@ import React from 'react';
 
 const TechStack = () => {
   return (
-    <div className="py-8">
+    <div className="py-24">
       <h3 className="font-gilda text-4xl text-center mb-8">
         My Current Tech Stack
       </h3>
@@ -24,7 +24,7 @@ const TechStack = () => {
                 height={100}
               />
             </div>
-            <div className="">
+            <div className="space-y-1">
               <p className="text-sm font-bold mt-2">{item.name}</p>
               <p className="text-xs text-neutral-400">{item.description}</p>
             </div>

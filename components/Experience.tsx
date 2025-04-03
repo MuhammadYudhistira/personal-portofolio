@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Experience = () => {
   return (
-    <div className="py-8">
+    <div className="py-24">
       <h3 className="font-gilda text-4xl text-center mb-8">My Experience</h3>
       <div className="flex justify-center">
         <Tabs defaultValue="Work" className="w-full">
@@ -18,8 +18,8 @@ const Experience = () => {
           </TabsList>
           <TabsContent
             value="Work"
-            className="w-full mt-3 border broder-white/20 rounded-md p-4 space-y-8">
-            <div className="flex gap-4">
+            className="w-full mt-3 border broder-white/20 rounded-md p-4">
+            <div className="flex justify-start items-start gap-4">
               <div className="relative size-20 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-36 lg:h-36">
                 <Image
                   src="/img/LPPM.png"
@@ -44,7 +44,7 @@ const Experience = () => {
                 </p>
               </div>
             </div>
-            <div className="flex items-center gap-4">
+            <div className="flex justify-start items-start gap-4">
               <div className="relative size-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-36 lg:h-36">
                 <Image
                   src="/img/BPSDM.jpg"
