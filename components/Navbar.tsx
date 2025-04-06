@@ -13,9 +13,9 @@ import Link from 'next/link';
 
 const Navbar = () => {
   return (
-    <div className="fixed bottom-0 left-0 right-0 mb-2 z-30">
+    <div className="fixed bottom-5 left-0 right-0 mb-2 z-30">
       <TooltipProvider delayDuration={100}>
-        <Dock direction="middle" className="rounded-full" iconDistance={160}>
+        <Dock direction="middle" className="rounded-full" iconDistance={160} >
           <DockIcon>
             <Tooltip>
               <TooltipTrigger>

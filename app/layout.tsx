@@ -3,7 +3,7 @@ import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
 
 export const metadata: Metadata = {
-  title: 'Yudhistira M',
+  title: 'Muhammad Yudhistira',
   description: 'Website Portofolio Yudhistira',
 };
 

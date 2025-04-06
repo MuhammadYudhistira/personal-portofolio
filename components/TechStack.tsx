@@ -1,14 +1,26 @@
+'use client';
 import { DATA } from '@/data/Data';
 import Image from 'next/image';
 import React from 'react';
+import { motion } from 'motion/react';
 
 const TechStack = () => {
   return (
     <div className="py-24">
-      <h3 className="font-gilda text-4xl text-center mb-8">
+      <motion.h3
+        className="font-gilda text-4xl text-center mb-8"
+        initial={{ x: -200, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}>
         My Current Tech Stack
-      </h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      </motion.h3>
+      <motion.div
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
+        initial={{ y: 200, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}>
         {DATA.techStack.map((item) => (
           <div
             key={item.name}
@@ -31,7 +43,7 @@ const TechStack = () => {
           </div>
         ))}
         <div></div>
-      </div>
+      </motion.div>
     </div>
   );
 };

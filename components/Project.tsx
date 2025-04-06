@@ -1,22 +1,29 @@
+'use client';
 import Image from 'next/image';
 import React from 'react';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
 import { GitHubLogoIcon } from '@radix-ui/react-icons';
 import { Globe } from 'lucide-react';
+import { motion } from 'motion/react';
 
 const Project = () => {
   return (
     <div className="py-24">
       <h3 className="font-gilda text-4xl text-center mb-12">My Projects</h3>
       <div className="grid grid-cols-1 gap-16">
-        <div className="bg-white/5 backdrop-blur-none rounded-xl w-full pb-4 flex flex-col start items-start">
+        <motion.div
+          className="bg-white/5 backdrop-blur-none rounded-xl w-full pb-4 flex flex-col start items-start"
+          initial={{ x: -200, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}>
           <div className="relative w-full aspect-[16/9] mb-4 overflow-hidden rounded-t-xl">
             <Image
               src={'/project/diaryapp.png'}
               alt="project"
               fill
-              className="object-cover"
+              className="object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"
             />
           </div>
           <div className="flex flex-col gap-2 px-4">
@@ -49,14 +56,19 @@ const Project = () => {
               </Button>
             </div>
           </div>
-        </div>
-        <div className="bg-white/5 backdrop-blur-none rounded-xl w-full pb-4 flex flex-col start items-start">
+        </motion.div>
+        <motion.div
+          className="bg-white/5 backdrop-blur-none rounded-xl w-full pb-4 flex flex-col start items-start"
+          initial={{ x: 200, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}>
           <div className="relative w-full aspect-[16/9] mb-4 overflow-hidden rounded-t-xl">
             <Image
               src={'/project/maset.png'}
               alt="project"
               fill
-              className="object-cover"
+              className="object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"
             />
           </div>
           <div className="flex flex-col gap-2 px-4">
@@ -97,7 +109,7 @@ const Project = () => {
               </Button>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
