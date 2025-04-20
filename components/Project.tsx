@@ -99,14 +99,14 @@ const Project = () => {
                   Github
                 </a>
               </Button>
-              <Button size={'sm'}>
+              {/* <Button size={'sm'}>
                 <Globe />
                 <a
                   target="_blank"
                   href="https://manajemen-aset.yudhistira.site">
                   Website
                 </a>
-              </Button>
+              </Button> */}
             </div>
           </div>
         </motion.div>

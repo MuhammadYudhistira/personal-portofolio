@@ -1,13 +1,13 @@
 'use client';
 import { Dock, DockIcon } from '@/components/magicui/dock';
-import { HomeIcon, MoonIcon } from '@radix-ui/react-icons';
+import { HomeIcon } from '@radix-ui/react-icons';
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
-import { Separator } from '@/components/ui/separator';
+// import { Separator } from '@/components/ui/separator';
 import { DATA } from '@/data/Data';
 import Link from 'next/link';
 
@@ -28,7 +28,7 @@ const Navbar = () => {
               </TooltipContent>
             </Tooltip>
           </DockIcon>
-          <Separator orientation="vertical" className="bg-gray-600" />
+          {/* <Separator orientation="vertical" className="bg-gray-600" /> */}
           {DATA.navbar.map((item, index) => (
             <DockIcon key={index}>
               <Tooltip>

@@ -66,7 +66,7 @@ const Hero = () => {
         }}
         viewport={{ once: true }}
         className="absolute hidden bottom-32 animate-bounce duration-1000 md:flex flex-col items-center justify-center gap-4 opacity-50">
-        <p className="font-bold text-[#0ABAB5] ">SCROLL</p>
+        {/* <p className="font-bold text-[#0ABAB5] ">SCROLL</p> */}
         <svg className="size-10 text-[#0ABAB5]">
           <Mouse width={36} height={36} />
         </svg>
