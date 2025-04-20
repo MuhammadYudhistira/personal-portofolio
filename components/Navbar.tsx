@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <div className="fixed bottom-5 left-0 right-0 mb-2 z-30">
       <TooltipProvider delayDuration={100}>
-        <Dock direction="middle" className="rounded-full" iconDistance={160} >
+        <Dock direction="middle" className="rounded-full" iconDistance={160}>
           <DockIcon>
             <Tooltip>
               <TooltipTrigger>
@@ -33,9 +33,9 @@ const Navbar = () => {
             <DockIcon key={index}>
               <Tooltip>
                 <TooltipTrigger>
-                  <Link href={item.href} target="_blank">
+                  <a href={item.href} target="_blank">
                     <item.icon className="size-6" />
-                  </Link>
+                  </a>
                 </TooltipTrigger>
                 <TooltipContent className="mb-2 bg-white text-black">
                   <p>{item.label}</p>
@@ -43,10 +43,10 @@ const Navbar = () => {
               </Tooltip>
             </DockIcon>
           ))}
-          <Separator orientation="vertical" className="bg-gray-600" />
+          {/* <Separator orientation="vertical" className="bg-gray-600" />
           <DockIcon>
             <MoonIcon className="size-6" />
-          </DockIcon>
+          </DockIcon> */}
         </Dock>
       </TooltipProvider>
     </div>
