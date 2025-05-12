@@ -59,7 +59,7 @@ const Project = () => {
         </motion.div>
         <motion.div
           className="bg-white/5 backdrop-blur-none rounded-xl w-full pb-4 flex flex-col start items-start"
-          initial={{ x: 200, opacity: 0 }}
+          initial={{ x: -200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}>
